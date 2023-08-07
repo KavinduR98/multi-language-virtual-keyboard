@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(document).keyboard({
+                language: 'azeri-latin, us:English, arabic:العَرَبِيَّة, vietnamese:tiếng Việt, hindi:हिन्दी,sinhala',
+                enterKey: function () {
+                    alert('Hey there! This is a callback function example.');
+                },
+                keyboardPosition: 'bottom',
+                directEnter: false,
+                showSelectedLanguage: true
+            });
+        });
+    </script>
+    <title>MOK Project - Sample</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <input type="text" name="" data-trigger-keyboard="true">
+    
+</body>
+
+</html>
